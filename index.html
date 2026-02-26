@@ -2,56 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Typing Speed Test</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Typing Speed Test</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  Personal best: <!-- PB --> WPM
+<main class="container">
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Time: <!-- Time -->
+  <header class="stats">
 
-  Difficulty:
-  Easy
-  Medium
-  Hard
+    <div class="personal-best">
+      Personal best: <span id="pb">0</span> WPM
+    </div>
 
-  Mode:
-  Timed (60s)
-  Passage
+    <div class="live-stats">
+      <span>WPM: <span id="wpm">0</span></span>
+      <span>Accuracy: <span id="accuracy">0</span>%</span>
+      <span>Time: <span id="time">60</span>s</span>
+    </div>
 
-  <!-- Passage -->
+  </header>
 
-  Start Typing Test
-  Or click the text and start typing
+  <section class="settings">
 
-  <!-- Test Complete Start -->
+    <div class="difficulty">
+      <h3>Difficulty</h3>
 
-  Test Complete!
-  Solid run. Keep pushing to beat your high score.
+      <button>Easy</button>
+      <button>Medium</button>
+      <button>Hard</button>
+    </div>
 
-  WPM: <!-- WPM -->
-  Accuracy: <!-- Accuracy -->
-  Characters: <!-- Correct/Incorrect -->
 
-  Go Again
+    <div class="mode">
+      <h3>Mode</h3>
+
+      <button>Timed (60s)</button>
+      <button>Passage</button>
+    </div>
+
+  </section>
+
+  <section class="test-area">
+
+    <p id="passage">
+      Click start to begin the typing test...
+    </p>
+
+  </section>
+
+  <section class="start-section">
+
+    <button id="startBtn">
+      Start Typing Test
+    </button>
+
+    <p>
+      Or click the text and start typing
+    </p>
+
+  </section>
+
+  <section class="results" id="results">
+
+    <h2>Test Complete!</h2>
+
+    <p>
+      Solid run. Keep pushing to beat your high score.
+    </p>
+
+    <div class="result-stats">
+
+      <p>WPM: <span id="finalWpm">0</span></p>
+
+      <p>Accuracy: <span id="finalAccuracy">0</span>%</p>
+
+      <p>Characters: 
+        <span id="correct">0</span> /
+        <span id="incorrect">0</span>
+      </p>
+
+    </div>
+
+    <button id="restartBtn">
+      Go Again
+    </button>
+
+  </section>
+
+</main>
+
+
+<div class="attribution">
+  Challenge by 
+  <a href="https://www.frontendmentor.io?ref=challenge">
+    Frontend Mentor
+  </a>.
   
-  <!-- Test Complete End -->
+  Coded by 
+  <a href="#">
+    Lucca Freixo Bittencourt
+  </a>.
+</div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
