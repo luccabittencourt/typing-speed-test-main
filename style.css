@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+main.container {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+    padding: 20px;
+}
+
+.container {
+
+    max-width: 800px;
+    width: 100%;
+
+    background-color: #1e293b;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+
+}
+
+.stats {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.live-stats {
+
+    display: flex;
+
+    gap: 20px;
+
+    font-weight: 600;
+}
+
+.settings {
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+
+.settings h3 {
+
+    margin-bottom: 8px;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+}
+
+
+.settings button {
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    background-color: #334155;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.settings button:hover {
+
+    background-color: #22c55e;
+
+}
+
+.test-area {
+
+    background-color: #0f172a;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    cursor: text;
+
+}
+
+
+.start-section {
+
+    text-align: center;
+
+}
+
+
+#startBtn {
+
+    margin-bottom: 10px;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    background-color: #22c55e;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+#startBtn:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+
+.results {
+
+    text-align: center;
+
+    display: none;
+
+}
+
+
+.result-stats {
+
+    margin: 20px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+#restartBtn {
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    background-color: #3b82f6;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+.attribution {
+
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+}
+
+
+.attribution a {
+
+    color: #22c55e;
+
+}
